@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color:rgb(228, 228, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 100px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.container .main-left-side {
+    position: relative;
+    background-color: rgb(48, 48, 48);
+    padding: 40px;
+}
+
+.profile-left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.profile-left .profile-picture-box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-left .profile-picture-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: white;
+}
+
+.profile-left .profile-name {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profile-left .profile-name span {
+    font-size: 0.6em;
+    font-weight: 300;
+}
+
+.profile-contact {
+    padding-top: 30px;
+}
+
+.profile-contact-title {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.profile-contact ul {
+    position: relative;
+}
+
+.profile-contact ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.profile-contact ul li span {
+    color: white;
+}
+
+.profile-contact ul li .profile-contact-icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: white;
+}
+
+.profile-education {
+    padding-top: 30px;
+}
+
+.profile-education-title {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.profile-education li {
+    margin-bottom: 25px;
+    list-style: none;
+}
+
+.profile-education h5 {
+    color: white;
+    font-weight: 200;
+}
+
+.profile-education h4 {
+    color: white;
+    font-weight: 500;
+}
+
+.profile-education .profile-education-school {
+    font-size: small;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.container .main-right-side {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+}
+
+.profile-about {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.profile-about :last-child {
+    margin: 0;
+}
+
+.profile-about .profile-summary-title {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.profile-about .profile-summary {
+    padding-top: 5px;
+    color: black;
+    font-size: 14px;
+    text-indent: 10%;
+    margin-bottom: 10px;
+}
+
+.profile-about .profile-experience {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.profile-about .profile-experience-title {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.profile-about .profile-experience .profile-experience-company {
+    min-width: 150px;
+}
+
+.profile-about .profile-experience .profile-experience-company h5 {
+    color: black;
+}
+
+.profile-about .profile-experience .profile-experience-position h4 {
+    color: black;
+}
+
+.profile-about .profile-experience .profile-experience-position p {
+    color: black;
+    text-indent: 0%;
+    font-size: 14px;
+}
+
+.profile-about .profile-experience .profile-experience-company .profile-company {
+    font-style: italic;
+    font-weight: 500;    
+}
+
+.profile-about .profile-proskill-title {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.profile-about .profile-proskill {
+    position: relative;
+}
+
+.profile-about .profile-proskill li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.profile-about .profile-proskill li span {
+    color: black;
+    font-size: 14px;
+}
+
+.profile-about .profile-proskill li .profile-skill-icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: black;
+}
+
+.profile-about .profile-reference-title {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.profile-about .profile-reference {
+    position: relative;
+}
+
+.profile-about .profile-reference li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.profile-about .profile-reference li .profile-reference-icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: black;
+}
+
+.profile-about .profile-reference .profile-reference-table {
+    display: inline;
+    width: 30px;
+    font-size: 14px;
+    color: black;
+    margin: 1px;
+}
+
+.profile-about .profile-reference .profile-reference-table .profile-reference-position {
+    font-style: italic;
+}
+
+
+
